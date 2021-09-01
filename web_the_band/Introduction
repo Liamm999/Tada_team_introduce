@@ -4,8 +4,6 @@ Các bước làm một prj:
 3. Dựng từng phần theo phân tích
 4. Hoàn thiện
 
-U là trời !!!!!!
-
 
 Các thành phần thường có trong 1 website (có thể có có thể không):
 1.Header(Đầu trang)
@@ -16,6 +14,7 @@ Các thành phần thường có trong 1 website (có thể có có thể không
 6.Banner(Hình ảnh không trình diễn, thường là quảng cáo dạng gif)
 7.Content(Nội dung chính)
 8.Footer(Chân Trang)
+
 
 Phân tích dự án web the band:
 - Các thành phần
@@ -30,6 +29,7 @@ Phân tích dự án web the band:
 - Dựng base 
 - Xây dựng từng phần theo phân tích
 - Hoàn thiện
+
 
 Nguyên tác làm:
 1. Từ ngoài vào trong
