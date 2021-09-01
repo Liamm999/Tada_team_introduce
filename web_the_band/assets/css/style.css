@@ -1,0 +1,182 @@
+/* Reset CSS 
+ '*' là chọn css cho tất cả các loại thẻ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS vào html thì chỉ các thẻ có chữ mới được kế thừa font (do font-family có tính kế thừa) */
+html {
+    /* Nó sẽ tìm trên máy nếu có arial thì lấy,
+    nếu không có thì sang helvetica,
+    nếu cũng không có thì tìm các font thuộc chủng loại sans-serif*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nguyên tác làm:
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết 
+*/
+
+/* Khi làm các phần của 1 trang web thì nên tư duy theo cách trả lời các câu hỏi sau:
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình dạng...)
+*/
+
+#main{
+
+}
+
+#header{
+    /* Chiều ngang kế thừa dài ngang hết trình duyệt nên chỉ qtâm đến height */
+    height: 46.4px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* cho header nó nổi lên trên cùng */
+    z-index: 1;
+}
+
+#nav {
+    /* Để như này thì nav (mang thẻ div) không bị kế thừa hết chiều ngang trình duyệt
+    (chỉ cho nó ngang đến hết vị trí của nó thôi) */
+    display: inline-block;
+}
+
+/* Không để cái dấu chấm đằng trước mỗi dòng */
+#nav .subnav {
+    list-style-type: none;
+}
+
+/* Chọn các thẻ li là con của thẻ có id: nav */
+#nav li {
+    /* inline-block: để element display trên 1 line nhưng mang tính khối để sizing được */
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    /* inline-block ở đây thì cái kích thước background hover nó sẽ dựa vào line-height*/
+    display: inline-block;
+    /* Cho line-height = heigt của header để có thể cân giữa */
+    line-height: 46.4px;
+    /* Padding trái phải 24px để các chữ cách nhau */
+    padding: 0 24px;
+    /* In hoa */
+    text-transform: uppercase;
+}
+
+#nav .down-btn {
+    font-size: 10px;
+    position: relative;
+    bottom: 2px;
+}
+
+/* để hover vào li cho đỡ lỗi 
+khi 'li' được hover thì thẻ a là con trực tiếp của li là con của nav sẽ được CSS*/
+#nav li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    /* Cho .subnav biến mất */
+    display: none;
+    min-width: 160px;
+    /* nên để thêm top: 100% và left: 0 */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    /* box-shadow: none|h-offset(ngang) v-offset(dọc) blur spread color |inset|initial|inherit; */
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Khi hover vào li là con của nav và chứa .subnav thì mới hiện .subnav lên  */
+#nav  li:hover .subnav {
+    display: block;
+}
+.subnav li {
+    display: block;
+    /* 100% của thẻ chứa li là subnav */
+    width: 100%;
+}
+
+#nav .subnav a {
+    color: #000;
+    text-transform: none;
+    /* 100% của thẻ chứa nó là thẻ li */
+    width: 100%;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#header .search {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46.4px;
+}
+
+#header .search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider{
+    min-height: 500px;
+    /* margin-top để slider nó dịch xuống dưới header */
+    margin-top: 46.4px;
+    /* background-color: #333; */
+}
+
+#slider {
+    margin-top: 46.4px;
+    /* Ở đây là 50% chiều ngang của chính nó (dọc = 50% ngang) */
+    padding-top: 50%;
+    background: url('/Web_the_band/assets/img/tada-otg.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* Khi không cho position vào thì phần .text-content nó bị chiếm mất chỗ 
+của slider  */
+#slider .text-content {
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    /* căn giữa */
+    width: 100%;
+    
+}
+
+#slider #text-heading {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#slider #text-description {
+    font-size: 16px;
+    margin: 26px;
+}
+
+#content{
+    padding-top: 1000px
+}
+
+#footer{
+
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+
+#header {   
+    height: 46.4px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#header .search {
+    color: #fff;
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-btn {
+    font-size: 20px;
+    line-height: 46.4px;
+}
+#nav { 
+    display: inline-block;
+}
+
+#nav div {
+    display: inline-block;
+    position: relative;
+    line-height: 46.4px;
+    
+}
+
+#nav .down-btn {
+    font-size: 10px;
+    position: relative;
+    bottom: 2px;
+}
+
+#nav div a {
+    color: #fff;
+    display: inline-block;
+    line-height: 46.4px;
+    padding: 0 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+#nav > div:hover > a {
+    color: #000;
+    background-color: #ccc;
+    
+}
+
+#nav .subnav {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav div:hover .subnav {
+    display: block;
+}
+
+#nav .subnav div {
+    display: block;
+    width: 100%;
+}
+
+#nav .subnav a {
+    color: #000;
+    display: block;
+    width: 85%;
+    padding: 0 12px;
+    text-transform: none;
+    line-height: 38px;  
+}
+
+#nav .subnav a:hover {
+    background-color: #ccc;
+}
+
+#slider {
+    margin-top: 46.4px;
+    padding-top: 50%;
+    background-image: url("/Web_the_band/assets/img/tada-otg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#slider #text {
+    position: absolute;
+    text-align: center;
+    bottom: 60px;
+    width: 100%;
+    color: #fff;
+}
+
+#slider .heading {
+    font-weight: 500;
+    font-size: 30px; 
+}
+
+#slider .description {
+    font-size: 16px;
+    margin: 21px;
+}
+
+#content {
+    height: 500px;
+}
