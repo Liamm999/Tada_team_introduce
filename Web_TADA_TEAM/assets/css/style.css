@@ -181,7 +181,7 @@ của slider  */
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 64px;
+    padding: 64px 0;
 }
 
 #content .section_heading {
@@ -294,6 +294,7 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
 .place-list {
     /* căn trên và 2 cạnh */
     margin: -10px 7px 0;
+    padding-bottom: 38px;
 }
 
 .place-item {
@@ -305,6 +306,7 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
 .place-img {
     /* cho ảnh to bằng thẻ chứa nó thôi */
     width: 100%;
+    display: block;
 }
 
 .place-img:hover {
@@ -312,23 +314,38 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
 }
 
 .place-info {
-
+    background-color: #fff;
+    padding: 16px;
 }
 
 .place-heading {
-
+    font-size: 15px;
 }
 
 .place-date {
-
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
 }
 
 .place-desc {
-
+    font-size: 15px;
+    margin: 15px 0;
+    
 }
 
 .place-buy-btn {
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    padding: 10px 13px;
+}
 
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 /* Footer section */
