@@ -1,0 +1,45 @@
+Các bước làm một prj:
+1. phân tích
+2. Dựng base
+3. Dựng từng phần theo phân tích
+4. Hoàn thiện
+
+
+Các thành phần thường có trong 1 website (có thể có có thể không):
+1.Header(Đầu trang)
+2.Navigation(Thanh điều hướng)
+3.Breadcrumb(là một tập hợp những liên kết giúp người dùng xác định vị trí hiện tại của mình trong cấu trúc site)
+4.Sidebar(Dạng menu web trái or phải in screen)
+5.Slider(Trình diễn hình ảnh, video)
+6.Banner(Hình ảnh không trình diễn, thường là quảng cáo dạng gif)
+7.Content(Nội dung chính)
+8.Footer(Chân Trang)
+
+
+Phân tích dự án web the band:
+- Các thành phần
+    1. Header
+    2. Slider
+    3. Content
+        + About
+        + Tour
+        + Contact
+        + Footer
+    4. Footer
+- Dựng base 
+- Xây dựng từng phần theo phân tích
+- Hoàn thiện
+
+
+Nguyên tác làm:
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết 
+
+
+Khi làm các phần của 1 trang web thì nên tư duy theo cách trả lời các câu hỏi sau:
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình dạng...)
+
