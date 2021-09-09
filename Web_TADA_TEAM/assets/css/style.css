@@ -181,7 +181,7 @@ của slider  */
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding-top: 64px;
 }
 
 #content .section_heading {
@@ -239,7 +239,9 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
     clear: both;
 }
 
+
 /* Tour section */
+
 #content .white-text {
     color: #fff !important;
 }
@@ -284,6 +286,49 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
     text-align: center;
     line-height: 24px;
     
+}
+
+
+/* Tour Places */
+
+.place-list {
+    /* căn trên và 2 cạnh */
+    margin: -10px 7px 0;
+}
+
+.place-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+
+.place-img {
+    /* cho ảnh to bằng thẻ chứa nó thôi */
+    width: 100%;
+}
+
+.place-img:hover {
+    opacity: 0.5;
+}
+
+.place-info {
+
+}
+
+.place-heading {
+
+}
+
+.place-date {
+
+}
+
+.place-desc {
+
+}
+
+.place-buy-btn {
+
 }
 
 /* Footer section */
