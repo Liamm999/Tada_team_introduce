@@ -352,3 +352,103 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
 #footer{
 
 }
+
+/* Tickets modal */
+
+.modal-buy-tickets {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.4);
+    /* Căn giữa các thẻ con của modal-buy-ticket */
+    display: flex;
+    align-items: center;      /*căn giữa dọc*/
+    justify-content: center;    /*căn giữa ngang*/ 
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    /* responsive
+    Tại đây để max-width = 100% - 64 --> lúc nào ở 2 bên mép của modal cũng hở ít nhất 1 khoảng 64/2 = 32px (mỗi bên hở 32px) tính từ viền trình duyệt */
+    max-width: calc(100% - 64px);
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-heading {
+    width: 100%;
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.ti-ticket {
+    margin-right: 10px;
+}
+
+.close-btn {
+    /* abosolute trong modal-container */
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 18px;
+    padding: 18px;
+}
+
+.close-btn:hover {
+    color: #ccc;
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.modal-input {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.pay-btn {
+    width: 100%;
+    border: none;
+    padding: 18px;
+    background-color: #009688;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.pay-btn:hover {
+    opacity: 0.8;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
