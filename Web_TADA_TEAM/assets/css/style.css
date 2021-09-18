@@ -335,6 +335,7 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
 }
 
 .place-buy-btn {
+    border-style: none;
     display: inline-block;
     font-size: 15px;
     color: #fff;
@@ -363,9 +364,14 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
     bottom: 0;
     background-color:rgba(0, 0, 0, 0.4);
     /* Căn giữa các thẻ con của modal-buy-ticket */
-    display: flex;
+    display: none;
     align-items: center;      /*căn giữa dọc*/
     justify-content: center;    /*căn giữa ngang*/ 
+}
+
+/* để hiển thị modal lên với JavaScript */
+.open {
+    display: flex;
 }
 
 .modal-container {
@@ -376,6 +382,8 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
     max-width: calc(100% - 64px);
     min-height: 200px;
     position: relative;
+    /* tên keyframe, kiểu animation, thời gian chạy */
+    animation: modalFadein ease 0.5s;
 }
 
 .modal-heading {
@@ -451,4 +459,17 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
 
 .modal-footer a {
     color: #2196F3;
+}
+
+/* Làm animation cho modal */
+@keyframes modalFadein {
+    from { 
+        opacity: 0;
+        transform: translateY(-107px);
+    }
+
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

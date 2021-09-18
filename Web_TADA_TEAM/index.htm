@@ -100,7 +100,7 @@
                                 <h3 class="place-heading">Fresher Fiesta</h3>
                                 <p class="place-date">Wed 27 Oct 2021</p>
                                 <p class="place-desc">Fresher Fiesta is a greatest show welcoming new students at Ha Noi University. TADA TEAM will come and serve a special performance at this event. </p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button href="" class="place-buy-btn js-buy-tickets-btn">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -110,7 +110,7 @@
                                 <h3 class="place-heading">Hello World</h3>
                                 <p class="place-date">Fri 10 Dec 2021</p>
                                 <p class="place-desc">Hello world is a series of events that take place every year to welcome the new student of FIT Hanu.What special things will TADA TEAM bring? Come and watch us</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button href="" class="place-buy-btn js-buy-tickets-btn">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -120,7 +120,7 @@
                                 <h3 class="place-heading">VTV Happy Lunch</h3>
                                 <p class="place-date">Mon 21 Feb 2022</p>
                                 <p class="place-desc">TADA TEAM are very honored to be invited to perform at the grand stage of Vietnam national television station in the special issue of happy lunch. Come and have lunch with us.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <button href="" class="place-buy-btn js-buy-tickets-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -178,5 +178,45 @@
         </div>
     </div>
     
+    <!-- Using js to show and hide modal-buy-ticket -->
+    <script>
+        // gọi Tất Cả những thẻ có class .js-buy-tickets-btn (do chúng ta có 1 list các .js-buy-tickets-btn)
+        // AllbuyBtns là tên biến
+        const AllbuyBtns = document.querySelectorAll('.js-buy-tickets-btn') 
+        // gọi thẻ có class.modal
+        const modal = document.querySelector('.modal-buy-tickets')
+        // gọi thẻ có class .close-btn
+        const modalClose = document.querySelector('.close-btn')
+
+        // hàm showBuyTicketsModal dùng để add class open vào modal
+        function showBuyTicketsModal() {
+            modal.classList.add('open')
+        }
+        // Hàm để ẩn modal đi bằng cách bỏ open ra khỏi modal
+        function hideBuyTicketsModal() {
+            modal.classList.remove('open')
+        }
+
+        // lặp qua từng thẻ button và nghe hành vi (hành vi ở đây là click)
+        for (const buybtn of AllbuyBtns) {
+            // Khi buybtn được click thì hàm showBuyTicketsModal sẽ được gọi
+            buybtn.addEventListener('click', showBuyTicketsModal)
+        }
+
+        modalClose.addEventListener('click', hideBuyTicketsModal)
+
+        // Đoạn này để khi click ra vùng bên ngoài container thì modal cũng bị đóng lại:
+        modal.addEventListener('click', hideBuyTicketsModal) 
+        
+        // Dừng nổi bọt khi gặp container:
+        const modalContainer = document.querySelector('.modal-container')
+
+        function stopHideContainer(event) {
+            event.stopPropagation();
+        }
+
+        modalContainer.addEventListener('click', stopHideContainer)
+
+    </script>
 </body>
 </html>
