@@ -134,14 +134,9 @@ khi 'li' được hover thì thẻ a là con trực tiếp của li là con củ
     cursor: pointer;
 }
 
-#slider{
-    min-height: 500px;
-    /* margin-top để slider nó dịch xuống dưới header */
-    margin-top: 46.4px;
-    /* background-color: #333; */
-}
 
 #slider {
+    min-height: 500px;
     margin-top: 46.4px;
     /* Ở đây là 50% chiều ngang của chính nó (dọc = 50% ngang) */
     padding-top: 50%;
@@ -150,6 +145,10 @@ khi 'li' được hover thì thẻ a là con trực tiếp của li là con củ
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+
+    /* animation: sliderImg 8s infinite;
+    animation-timing-function: step-end;
+    animation-delay: 0; */
 }
 /* Khi không cho position vào thì phần .text-content nó bị chiếm mất chỗ 
 của slider  */
@@ -157,11 +156,37 @@ của slider  */
     color: #fff;
     position: absolute;
     bottom: 50px;
-    text-align: center;
-    /* căn giữa */
-    width: 100%;
-    
+    text-align: center; 
+    width: 100%; 
 }
+
+/* animation chuyển động ảnh trong slider
+@keyframes sliderImg {
+   0% {
+       background: url('/assets/img/tada-otg.jpg');
+       background-position: top center;
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+   25% {
+       background: url('/assets/img/butter.jpg');
+       background-position: top center;
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+   50% {
+       background: url('/assets/img/rd_HANU_blended.png');
+       background-position: top center;
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+   100% {
+       background: url('/assets/img/contest.jpg');
+       background-position: top center;
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+} */
 
 #slider #text-heading {
     font-weight: 500;
