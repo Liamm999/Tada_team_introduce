@@ -161,7 +161,7 @@ khi 'li' được hover thì thẻ a là con trực tiếp của li là con củ
     margin-top: 46.4px;
     /* Ở đây là 50% chiều ngang của chính nó (dọc = 50% ngang) */
     padding-top: 50%;
-    background: url('/assets/img/tada-otg.jpg');
+    background: url("/assets/img/tada-otg.jpg");
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
