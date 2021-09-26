@@ -183,7 +183,7 @@ khi 'li' được hover thì thẻ a là con trực tiếp của li là con củ
 /* Khi không cho position vào thì phần .text-content nó bị chiếm mất chỗ 
 của slider  */
 #slider .text-content {
-    display: none;
+    display: none;  /* đang dùng animation nên bỏ text ở đây đi */
     color: #fff;
     position: absolute;
     bottom: 50px;
@@ -211,8 +211,16 @@ của slider  */
        background-size: cover;
        background-repeat: no-repeat;
    }
-   100% {
+   75% {
        background: url('/assets/img/butter.jpg');
+       background-position: top center;
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+
+   /* Cái 100% không được hiển thị ??? */
+   100% {
+       background: url('');
        background-position: top center;
        background-size: cover;
        background-repeat: no-repeat;
