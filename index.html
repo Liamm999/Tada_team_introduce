@@ -217,7 +217,6 @@
         const AllbuyBtns = document.querySelectorAll('.js-buy-tickets-btn') 
         // gọi thẻ có class.modal
         const modal = document.querySelector('.modal-buy-tickets')
-        // gọi thẻ có class .close-btn
         const modalClose = document.querySelector('.close-btn')
 
         // hàm showBuyTicketsModal dùng để add class open vào modal
@@ -237,6 +236,15 @@
 
         modalClose.addEventListener('click', hideBuyTicketsModal)
 
+        // Đoạn này làm click vào pay thì hiện confirm sau đó thì đóng thẻ:
+        const modalClosePay = document.querySelector('.pay-btn')
+        
+        function hideModalandShowAlert() {
+            confirm("Sent this ?");
+            modal.classList.remove('open')
+        }
+
+        modalClosePay.addEventListener('click', hideModalandShowAlert)
         // Đoạn này để khi click ra vùng bên ngoài container thì modal cũng bị đóng lại:
         modal.addEventListener('click', hideBuyTicketsModal) 
         
