@@ -48,11 +48,43 @@
         </div>
 
         <!-- Slider -->
-        <div id="slider">
-            <div class="text-content">
+        <div id="slider"></div>
+            <style>
+                #slider {
+                    min-height: 500px;
+                    margin-top: 46.4px;
+                    /* Ở đây là 50% chiều ngang của chính nó (dọc = 50% ngang) */
+                    padding-top: 50%;
+                    /* background: url("../img/tada-otg.jpg"); */
+                    background-position: top center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: relative;
+
+                    animation: sliderImg 8s infinite;
+                    animation-timing-function: step-end;
+                }
+
+                /* animation chuyển động ảnh trong slider */
+                @keyframes sliderImg {
+                   0%   { background: url('/assets/img/tada-otg.jpg') top center / cover no-repeat; }
+                   25%  { background: url('/assets/img/contest.jpg') top center / cover no-repeat; }
+                   50%  { background: url('/assets/img/rd_HANU_blended.png') top center / cover no-repeat; }
+                   75%  { background: url('/assets/img/butter.jpg') top center / cover no-repeat; }
+                
+                   /* Cái 100% không được hiển thị ??? */
+                   100% {
+                       background: url('');
+                       background-position: top center;
+                       background-size: cover;
+                       background-repeat: no-repeat;
+                   }
+                }
+            </style>
+            <!-- <div class="text-content">
                 <h1 id="text-heading">AEON MALL HA DONG</h1>
                 <div id="text-description">Project dance cover the first Rosé's debut song: On the ground. We made it Special by performing two Rosé.</div>
-            </div>
+            </div> -->
         </div>
 
         <!-- Content -->
