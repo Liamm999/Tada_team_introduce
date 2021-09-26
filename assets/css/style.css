@@ -31,6 +31,7 @@ html {
 }
 
 /* Common: */
+
 .col {
     float: left;
     padding-left: 8px;
@@ -45,6 +46,13 @@ html {
     width: 100%;
 }
 
+.margin-top {
+    margin-top: 8px;
+}
+
+.white-text {
+    color: #fff !important;
+}
  
 /* Main: */
 
@@ -161,19 +169,21 @@ khi 'li' được hover thì thẻ a là con trực tiếp của li là con củ
     margin-top: 46.4px;
     /* Ở đây là 50% chiều ngang của chính nó (dọc = 50% ngang) */
     padding-top: 50%;
-    background: url("../img/tada-otg.jpg");
+    /* background: url("../img/tada-otg.jpg"); */
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 
-    /* animation: sliderImg 8s infinite;
+    animation: sliderImg 8s infinite;
     animation-timing-function: step-end;
-    animation-delay: 0; */
+    animation-delay: 0;
 }
+
 /* Khi không cho position vào thì phần .text-content nó bị chiếm mất chỗ 
 của slider  */
 #slider .text-content {
+    display: none;
     color: #fff;
     position: absolute;
     bottom: 50px;
@@ -181,7 +191,7 @@ của slider  */
     width: 100%; 
 }
 
-/* animation chuyển động ảnh trong slider
+/* animation chuyển động ảnh trong slider */
 @keyframes sliderImg {
    0% {
        background: url('/assets/img/tada-otg.jpg');
@@ -207,7 +217,7 @@ của slider  */
        background-size: cover;
        background-repeat: no-repeat;
    }
-} */
+}
 
 #slider #text-heading {
     font-weight: 500;
@@ -227,7 +237,7 @@ của slider  */
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 72px 0;
 }
 
 #content .section_heading {
@@ -287,10 +297,6 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
 
 
 /* Tour section */
-
-#content .white-text {
-    color: #fff !important;
-}
 
 #content .tour_background {
     background-color: #000;
@@ -552,11 +558,7 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
     clear: both;
 }
 
-.row {
-    margin-bottom: 8px;
-}
-
-.SEND-btn {
+.send-btn {
     float: right;
     color: #fff;
     background: #000;
@@ -568,9 +570,52 @@ rồi css thuộc tính clear: both; cho thẻ clear đó */
     cursor: pointer;
 }
 
-.SEND-btn:hover {
+.send-btn:hover {
     background-color: #ccc;
     color: #000;
 }
 
+/* Map section */
 
+.map-section img {
+    width: 100%;
+    filter: grayscale(50%);
+    margin-top: -130px;
+}
+
+/* footer */
+
+#footer {
+    padding: 64px 46px;
+    text-align: center;
+}
+
+.social-media-list {
+    font-size: 24px;
+}
+
+.social-media-list a {
+    text-decoration: none;
+    margin: 0 -2px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.social-media-list a:hover {
+    opacity: 0.4;
+}
+
+.coppyright {
+    font-size: 14px;
+    margin: 20px 0;
+    color: #000;
+    opacity: 0.6;
+}
+
+.coppyright a {
+    color: #000;
+}
+
+.coppyright a:hover {
+    opacity: 0.4;
+}
