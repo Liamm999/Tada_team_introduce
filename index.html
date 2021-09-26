@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tada Team</title>
+    <link rel="icon" type="image/png" href="./assets/img/tada team logo.jpg"/>
     <link rel="stylesheet" href="./assets/css/style.css">   <!-- './' có nghĩa là ngang hàng -->
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
 </head>
@@ -16,10 +17,11 @@
             <div id="nav">
                 <ul>
                     <!-- Viết hoa chữ cái đầu rồi css thành chữ in hoa sau -->
-                    <li><a href="">Home</a></li>
-                    <li><a href="">band</a></li>
-                    <li><a href="">Tour</a></li>
-                    <li><a href="">Contact</a></li>
+                    <!-- Dùng #id ở href để nó nhắm tới (khi ấn vào thẻ có #id nào thì nó chuyển tới #id đó) -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#band">band</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <!-- cái more này không có chèn link -->
                     <li>
                         <a href="">
@@ -29,9 +31,9 @@
                         <!-- navigation phụ -->
                         <div class="subnav">
                             <ul>
-                                <li><a href="">Merchandise</a></li>
-                                <li><a href="">Extras</a></li>
-                                <li><a href="">Media</a></li>
+                                <li><a href="#">Merchandise</a></li>
+                                <li><a href="#">Extras</a></li>
+                                <li><a href="#">Media</a></li>
                             </ul>
                         </div>
                     </li>
@@ -59,7 +61,7 @@
         <div id="content">  
 
             <!-- About section -->
-            <div class="section_content">
+            <div id="band" class="section_content">
                 <h2 class="section_heading">Tada Team</h2>
                 <p class="section_sub-heading">We love dancing</p>
                 <p id="about_tada">
@@ -86,7 +88,7 @@
             </div>
 
             <!-- Tour section -->
-            <div class="tour_background">
+            <div id="tour" class="tour_background">
                 <div class="section_content">
                     <h2 class="section_heading white-text">TOUR DATES</h2>
                     <p class="section_sub-heading white-text">Remember to book your tickets!</p>
@@ -133,7 +135,7 @@
             </div>
 
             <!-- Contact section -->
-            <div class="section_content">
+            <div id="contact" class="section_content">
                 <h2 class="section_heading">Contact</h2>
                 <p class="section_sub-heading">Fan? Drop a note!</p>
 

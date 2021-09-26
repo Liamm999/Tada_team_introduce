@@ -28,6 +28,8 @@ html {
     nếu không có thì sang helvetica,
     nếu cũng không có thì tìm các font thuộc chủng loại sans-serif*/
     font-family: Arial, Helvetica, sans-serif;
+    /* Hiệu ứng cuộn khi chuyển part */
+    scroll-behavior: smooth;
 }
 
 /* Common: */
