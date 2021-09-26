@@ -177,7 +177,6 @@ khi 'li' được hover thì thẻ a là con trực tiếp của li là con củ
 
     animation: sliderImg 8s infinite;
     animation-timing-function: step-end;
-    animation-delay: 0;
 }
 
 /* Khi không cho position vào thì phần .text-content nó bị chiếm mất chỗ 
@@ -193,30 +192,10 @@ của slider  */
 
 /* animation chuyển động ảnh trong slider */
 @keyframes sliderImg {
-   0% {
-       background: url('/assets/img/tada-otg.jpg');
-       background-position: top center;
-       background-size: cover;
-       background-repeat: no-repeat;
-   }
-   25% {
-       background: url('/assets/img/contest.jpg');
-       background-position: top center;
-       background-size: cover;
-       background-repeat: no-repeat;
-   }
-   50% {
-       background: url('/assets/img/rd_HANU_blended.png');
-       background-position: top center;
-       background-size: cover;
-       background-repeat: no-repeat;
-   }
-   75% {
-       background: url('/assets/img/butter.jpg');
-       background-position: top center;
-       background-size: cover;
-       background-repeat: no-repeat;
-   }
+   0%   { background: url('/assets/img/tada-otg.jpg') top center / cover no-repeat; }
+   25%  { background: url('/assets/img/contest.jpg') top center / cover no-repeat; }
+   50%  { background: url('/assets/img/rd_HANU_blended.png') top center / cover no-repeat; }
+   75%  { background: url('/assets/img/butter.jpg') top center / cover no-repeat; }
 
    /* Cái 100% không được hiển thị ??? */
    100% {
