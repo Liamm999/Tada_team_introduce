@@ -191,17 +191,20 @@ của slider  */
 /* animation chuyển động ảnh trong slider */
 @keyframes sliderImg {
   0% {
-    background: url("/Web_TADA_TEAM/assets/img/tada-otg.jpg") top center / cover no-repeat;
-  }
-  25% {
-    background: url("/Web_TADA_TEAM//assets/img/contest.jpg") top center / cover no-repeat;
-  }
-  50% {
-    background: url("/Web_TADA_TEAM//assets/img/rd_HANU_blended.png") top center / cover
+    background: url("/Web_TADA_TEAM/assets/img/tada-otg.jpg") top center / cover
       no-repeat;
   }
+  25% {
+    background: url("/Web_TADA_TEAM//assets/img/contest.jpg") top center / cover
+      no-repeat;
+  }
+  50% {
+    background: url("/Web_TADA_TEAM//assets/img/rd_HANU_blended.png") top center /
+      cover no-repeat;
+  }
   75% {
-    background: url("/Web_TADA_TEAM//assets/img/butter.jpg") top center / cover no-repeat;
+    background: url("/Web_TADA_TEAM//assets/img/butter.jpg") top center / cover
+      no-repeat;
   }
 
   /* Cái 100% không được hiển thị ??? */
