@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tada Team</title>
-    <link rel="icon" type="image/png" href="./assets/img/tada team logo.jpg"/>  <!--  favicon    -->
-    <link rel="stylesheet" href="./assets/css/style.css">   <!-- './' có nghĩa là ngang hàng -->
+    <link rel="icon" type="image/png" href="./assets/img/tada team logo.jpg" />
+    <!--  favicon    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- './' có nghĩa là ngang hàng -->
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
 </head>
+
 <body>
     <div id="main">
         <!-- Header -->
@@ -58,16 +62,17 @@
         </div>
 
         <!-- Content -->
-        <div id="content">  
+        <div id="content">
 
             <!-- About section -->
             <div id="band" class="section_content">
                 <h2 class="section_heading">Tada Team</h2>
                 <p class="section_sub-heading">We love dancing</p>
                 <p id="about_tada">
-                    Hi! We are TADA TEAM, a dance team from Hanoi University, Vietnam. We specialize in k-pop cover dances as well as choreographing our own dances. In the future, we will also focus on other dance genres such as dance-sport, sexy-dance and even contemporary dance. We are constantly working to improve ourselves and grow our team stronger and stronger.         
+                    Hi! We are TADA TEAM, a dance team from Hanoi University, Vietnam. We specialize in k-pop cover dances as well as choreographing our own dances. In the future, we will also focus on other dance genres such as dance-sport, sexy-dance and even contemporary
+                    dance. We are constantly working to improve ourselves and grow our team stronger and stronger.
                 </p>
-                
+
                 <div class="member_list">
                     <div class="member_item">
                         <div class="member_name">Kick Ryan</br>Leader</div>
@@ -80,8 +85,8 @@
                     </div>
 
                     <div class="member_item">
-                        <div class="member_name">Momo</br>Girl group leader</div>
-                        <img src="./assets/img/Trang mo.png" alt="Trang Mo" class="member_img">
+                        <div class="member_name">Gracey</br>Leader</div>
+                        <img src="./assets/img/Hien-giang.png" alt="Gracey" class="member_img">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -93,15 +98,21 @@
                     <h2 class="section_heading white-text">TOUR DATES</h2>
                     <p class="section_sub-heading white-text">Remember to book your tickets!</p>
                     <ul class="tickets-list">
-                        <li>October<pan class="sold-out">Sold out</pan></li>
-                        <li>December<pan class="sold-out">Sold out</pan></li>
-                        <li>February<pan class="remain-tickets">3</pan></li>
+                        <li>October
+                            <pan class="sold-out">Sold out</pan>
+                        </li>
+                        <li>December
+                            <pan class="sold-out">Sold out</pan>
+                        </li>
+                        <li>February
+                            <pan class="remain-tickets">3</pan>
+                        </li>
                     </ul>
 
                     <!-- Tour places -->
                     <div class="place-list">
                         <div class="place-item">
-                            <img src="./assets/img/FF2019.jpg"alt=""class="place-img">
+                            <img src="./assets/img/FF2019.jpg" alt="" class="place-img">
                             <div class="place-info">
                                 <h3 class="place-heading">Fresher Fiesta</h3>
                                 <p class="place-date">Wed 27 Oct 2021</p>
@@ -146,22 +157,22 @@
                         <p><i class="ti-email"></i>Email: mail@mail.com</p>
                     </div>
                     <div class="col col-half contact-form">
-                       <form action="">
-                           <div class="row">
+                        <form action="">
+                            <div class="row">
                                 <div class="col col-half">
                                     <input type="text" name="" id="" required placeholder="Name" class="form-control">
                                 </div>
                                 <div class="col col-half">
                                     <input type="email" name="" id="" required placeholder="Email" class="form-control">
                                 </div>
-                           </div>
-                           <div class="row margin-top">
+                            </div>
+                            <div class="row margin-top">
                                 <div class="col col-full">
                                     <input type="text" name="" id="" required placeholder="Message" class="form-control">
                                 </div>
-                           </div>
-                           <input class="send-btn" type="submit" value="SEND">
-                       </form>
+                            </div>
+                            <input class="send-btn" type="submit" value="SEND">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -179,8 +190,7 @@
                 <i class="ti-close"></i>
             </div>
             <header class="modal-heading">
-                <i class="ti-ticket"></i> 
-                Tickets
+                <i class="ti-ticket"></i> Tickets
             </header>
 
             <div class="modal-body">
@@ -191,31 +201,31 @@
                     Tickets, $15 per person
                 </label>
                 <input id="modal-how-many" type="text" class="modal-input" placeholder="How many?">
-                
+
                 <label for="modal-email" class="modal-label">
                     <i class="ti-user"></i>
                     Send To
                 </label>
                 <input id="modal-email" type="email" class="modal-input" placeholder="Enter email...">
-                
+
                 <button class="pay-btn">
                     Pay 
                     <i class="ti-check"></i>
                 </button>
             </div>
-            
+
             <footer class="modal-footer">
                 Need <a href="">help?</a>
             </footer>
         </div>
     </div>
-    
+
     <!-- Using js to show and hide modal-buy-ticket -->
     <script>
         // gọi Tất Cả những thẻ có class .js-buy-tickets-btn (do chúng ta có 1 list các .js-buy-tickets-btn)
         // AllbuyBtns là tên biến
-        const AllbuyBtns = document.querySelectorAll('.js-buy-tickets-btn') 
-        // gọi thẻ có class.modal
+        const AllbuyBtns = document.querySelectorAll('.js-buy-tickets-btn')
+            // gọi thẻ có class.modal
         const modal = document.querySelector('.modal-buy-tickets')
         const modalClose = document.querySelector('.close-btn')
 
@@ -238,16 +248,16 @@
 
         // Đoạn này làm click vào pay thì hiện confirm sau đó thì đóng thẻ:
         const modalClosePay = document.querySelector('.pay-btn')
-        
+
         function hideModalandShowAlert() {
             confirm("Sent this ?");
             modal.classList.remove('open')
         }
 
         modalClosePay.addEventListener('click', hideModalandShowAlert)
-        // Đoạn này để khi click ra vùng bên ngoài container thì modal cũng bị đóng lại:
-        modal.addEventListener('click', hideBuyTicketsModal) 
-        
+            // Đoạn này để khi click ra vùng bên ngoài container thì modal cũng bị đóng lại:
+        modal.addEventListener('click', hideBuyTicketsModal)
+
         // Dừng nổi bọt khi gặp container:
         const modalContainer = document.querySelector('.modal-container')
 
@@ -256,29 +266,29 @@
         }
 
         modalContainer.addEventListener('click', stopHideContainer)
-
     </script>
     <!-- End: contact section -->
 
-            <!-- Map section -->
-            <div class="map-section">
-                <img src="./assets/img/map.png" alt="">
-            </div>
+    <!-- Map section -->
+    <div class="map-section">
+        <img src="./assets/img/map.png" alt="">
+    </div>
 
-        <!-- Footer -->
-        <div id="footer">
-            <div class="social-media-list">
-                <a href=""><i class="ti-facebook"></i></a>
-                <a href=""><i class="ti-instagram"></i></a>
-                <a href=""><i class="ti-youtube"></i></a>
-                <a href=""><i class="ti-pinterest"></i></a>
-                <a href=""><i class="ti-twitter"></i></a>
-                <a href=""><i class="ti-linkedin"></i></a>
-            </div>
-            <div class="coppyright">
-                <p>Powered by <a href="">Liamm</a></p>
-            </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="social-media-list">
+            <a href=""><i class="ti-facebook"></i></a>
+            <a href=""><i class="ti-instagram"></i></a>
+            <a href=""><i class="ti-youtube"></i></a>
+            <a href=""><i class="ti-pinterest"></i></a>
+            <a href=""><i class="ti-twitter"></i></a>
+            <a href=""><i class="ti-linkedin"></i></a>
+        </div>
+        <div class="coppyright">
+            <p>Powered by <a href="">Liamm</a></p>
         </div>
     </div>
+    </div>
 </body>
+
 </html>
